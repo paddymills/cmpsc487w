@@ -1,5 +1,7 @@
 # MongoDB with FastAPI
 
+[tutorial](https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/)
+
 This is a small sample project demonstrating how to build an API with [MongoDB](https://developer.mongodb.com/) and [FastAPI](https://fastapi.tiangolo.com/).
 It was written to accompany a [blog post](https://developer.mongodb.com/quickstart/python-quickstart-fastapi/) - you should go read it!
 
@@ -18,7 +20,7 @@ pip install -r requirements.txt
 export MONGODB_URL="mongodb+srv://<username>:<password>@<url>/<db>?retryWrites=true&w=majority"
 
 # Start the service:
-uvicorn app:app --reload
+uvicorn app:app --reload()
 ```
 
 (Check out [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) if you need a MongoDB database.)
