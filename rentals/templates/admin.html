@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <title>Mr. Johnson's Delivery Vehicle Rental</title>
   </head>
   <body>
-    <main>
-    	<h1>Reservations</h1>
-      <table>
+  	<header>
+  		<nav class="navbar is-primary">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="/">
+						<h1 class="title is-4">Mr. Johnson's Delivery Vehicle Rental</h1>
+					</a>
+				</div>
+			</nav>
+		</header>
+    <main class="container is-flex is-flex-direction-column">
+    	<h1 class="title">Reservations</h1>
+      <table class="table">
       	<thead>
       		<tr>
 	  			<th>ID</th>
@@ -23,7 +33,7 @@
       		<tr>
 	  			<td>{{ res['id'] }}</td>
 	  			<td>{{ res['reserved_by'] }}</td>
-	  			<td>{{ res['vehicle'] }}</td>
+	  			<td>{{ res['vehicle'].description }}</td>
 	  			<td>{{ res['return_date'] }}</td>
 	  		</tr>
 	  		{% endfor %}
