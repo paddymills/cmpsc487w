@@ -1,10 +1,16 @@
+
+export FLASK_APP := "rentals"
+export FLASK_DEBUG := "1"
+export FLASK_ENV := "development"
+
 install:
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
+    python3 deploy.py
 
 run:
-    flask --app app run
+    flask run
 
 dev:
-    watchexec --exts py,html,css --restart -- flask --app app run
+    watchexec --exts py,html,css --restart -- flask run
