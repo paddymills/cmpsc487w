@@ -1,9 +1,10 @@
-requirements:
-    pip-compile --strip-extras requirements.in
-    pip-compile --strip-extras dev-requirements.in
+install:
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
 
 run:
-    uvicorn app:app --reload
+    flask --app app run
 
-test:
-    pytest
+dev:
+    watchexec --exts py,html,css --restart -- flask --app app run
