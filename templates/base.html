@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Johnson's Delivery Vehicle Rental</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mr. Johnson's Delivery Vehicle Rental</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+      </ul>
+    </nav>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <p>&copy; 2024 Patrick Miller</p>
+    </footer>
+  </body>
+</html>
