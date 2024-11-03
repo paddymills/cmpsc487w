@@ -16,3 +16,10 @@ python deploy.py
 ```
 flask --app rentals run
 ```
+
+# Screenshots
+## Enter rental page
+[![Make reservation](/img/reservation.jpg)]
+
+## View reservations
+[![View reservations](/img/list.jpg)]
