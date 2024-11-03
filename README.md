@@ -19,7 +19,7 @@ flask --app rentals run
 
 # Screenshots
 ## Enter rental page
-[![Make reservation](/img/reservation.jpg)]
+[![Make reservation](/img/reservation.png)]
 
 ## View reservations
-[![View reservations](/img/list.jpg)]
+[![View reservations](/img/list.png)]
